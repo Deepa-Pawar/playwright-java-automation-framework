@@ -1,0 +1,22 @@
+{
+  "password": "Auto%45UK@@",
+  "day": "3",
+  "month": "March",
+  "year": "2001",
+  "firstName": "User_First",
+  "lastName": "User_Last",
+  "company": "Siemens",
+  "address": "Oxford Street 23",
+  "country": "United States",
+  "state": "Pennsylvania",
+  "city": "Philadephia",
+  "zipcode": "45090",
+  "mobileNumber": "1829382229",
+  "paymentDetails": {
+       "nameOnCard": "Mr. User_First User_Last",
+       "cardNumber": "4111222233334444",
+       "cvc": "123",
+       "expirationMonth": "12",
+       "expirationYear": "2030"
+     }
+}

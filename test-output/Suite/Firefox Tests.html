@@ -1,0 +1,394 @@
+<html>
+<head>
+<title>TestNG:  Firefox Tests</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Firefox Tests</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>3/2/0</td>
+</tr><tr>
+<td>Started on:</td><td>Tue Oct 27 11:46:49 CET 2026</td>
+</tr>
+<tr><td>Total time:</td><td>165 seconds (165195 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.qa.tests.e2e.EndToEndWorkflowTest.placeNewOrderLoginBeforeCheckout()'><b>placeNewOrderLoginBeforeCheckout</b><br>Test class: com.qa.tests.e2e.EndToEndWorkflowTest<br>Test method: Verify that user is able to place Order: Register before Checkout</td>
+<td><div><pre>com.microsoft.playwright.TimeoutError: Error {
+  message=&apos;Timeout 30000ms exceeded.
+  name=&apos;TimeoutError
+  stack=&apos;TimeoutError: Timeout 30000ms exceeded.
+    at _ProgressController.run (C:\Users\deepa\AppData\Local\Temp\playwright-java-11084356679587799792\package\lib\coreBundle.js:12135:32)
+    at DispatcherConnection.dispatch (C:\Users\deepa\AppData\Local\Temp\playwright-java-11084356679587799792\package\lib\coreBundle.js:18775:44)
+}
+Call log:
+-   - waiting for getByRole(AriaRole.LINK, new Page.GetByRoleOptions().setName(&quot;View Cart&quot;))
+
+	at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:52)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:147)
+	at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:136)
+	at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:133)
+	at com.microsoft.playwright.impl.FrameImpl.clickImpl(FrameImpl.java:244)
+	at com.microsoft.playwright.impl.LocatorImpl.click(LocatorImpl.java:173)
+	at com.microsoft.playwright.Locator.click(Locator.java:2837)
+	at com.qa.framework.pages.ProductPage.clickOnViewCartLink(ProductPage.java:66)
+	at com.qa.tests.e2e.EndToEndWorkflowTest.placeNewOrderLoginBeforeCheckout(EndToEndWorkflowTest.java:162)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+Caused by: com.microsoft.playwright.TimeoutError: Error {
+  message=&apos;Timeout 30000ms exceeded.
+  name=&apos;TimeoutError
+  stack=&apos;TimeoutError: Timeout 30000ms exceeded.
+    at _ProgressController.run (C:\Users\deepa\AppData\Local\Temp\playwright-java-11084356679587799792\package\lib\coreBundle.js:12135:32)
+    at DispatcherConnection.dispatch (C:\Users\deepa\AppData\Local\Temp\playwright-java-11084356679587799792\package\lib\coreBundle.js:18775:44)
+}
+Call log:
+-   - waiting for getByRole(AriaRole.LINK, new Page.GetByRoleOptions().setName(&quot;View Cart&quot;))
+
+	at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:273)
+	at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:229)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:145)
+	... 27 more
+... Removed 15 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace534812070", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace534812070'><pre>com.microsoft.playwright.TimeoutError: Error {
+  message=&apos;Timeout 30000ms exceeded.
+  name=&apos;TimeoutError
+  stack=&apos;TimeoutError: Timeout 30000ms exceeded.
+    at _ProgressController.run (C:\Users\deepa\AppData\Local\Temp\playwright-java-11084356679587799792\package\lib\coreBundle.js:12135:32)
+    at DispatcherConnection.dispatch (C:\Users\deepa\AppData\Local\Temp\playwright-java-11084356679587799792\package\lib\coreBundle.js:18775:44)
+}
+Call log:
+-   - waiting for getByRole(AriaRole.LINK, new Page.GetByRoleOptions().setName(&quot;View Cart&quot;))
+
+	at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:52)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:147)
+	at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:136)
+	at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:133)
+	at com.microsoft.playwright.impl.FrameImpl.clickImpl(FrameImpl.java:244)
+	at com.microsoft.playwright.impl.LocatorImpl.click(LocatorImpl.java:173)
+	at com.microsoft.playwright.Locator.click(Locator.java:2837)
+	at com.qa.framework.pages.ProductPage.clickOnViewCartLink(ProductPage.java:66)
+	at com.qa.tests.e2e.EndToEndWorkflowTest.placeNewOrderLoginBeforeCheckout(EndToEndWorkflowTest.java:162)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+Caused by: com.microsoft.playwright.TimeoutError: Error {
+  message=&apos;Timeout 30000ms exceeded.
+  name=&apos;TimeoutError
+  stack=&apos;TimeoutError: Timeout 30000ms exceeded.
+    at _ProgressController.run (C:\Users\deepa\AppData\Local\Temp\playwright-java-11084356679587799792\package\lib\coreBundle.js:12135:32)
+    at DispatcherConnection.dispatch (C:\Users\deepa\AppData\Local\Temp\playwright-java-11084356679587799792\package\lib\coreBundle.js:18775:44)
+}
+Call log:
+-   - waiting for getByRole(AriaRole.LINK, new Page.GetByRoleOptions().setName(&quot;View Cart&quot;))
+
+	at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:273)
+	at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:229)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:145)
+	... 27 more
+</pre></div></td>
+<td>40</td>
+<td>com.qa.tests.e2e.EndToEndWorkflowTest@d613308</td></tr>
+<tr>
+<td title='com.qa.tests.e2e.EndToEndWorkflowTest.contactUs()'><b>contactUs</b><br>Test class: com.qa.tests.e2e.EndToEndWorkflowTest<br>Test method: Verify that existing user is able to Contact successfully</td>
+<td><div><pre>com.microsoft.playwright.TimeoutError: Error {
+  message=&apos;Timeout 30000ms exceeded.
+  name=&apos;TimeoutError
+  stack=&apos;TimeoutError: Timeout 30000ms exceeded.
+    at _ProgressController.run (C:\Users\deepa\AppData\Local\Temp\playwright-java-11084356679587799792\package\lib\coreBundle.js:12135:32)
+    at DispatcherConnection.dispatch (C:\Users\deepa\AppData\Local\Temp\playwright-java-11084356679587799792\package\lib\coreBundle.js:18775:44)
+}
+Call log:
+-   - waiting for getByRole(AriaRole.LINK, new Page.GetByRoleOptions().setName(&quot; Contact us&quot;))
+-     - locator resolved to &lt;a href=&quot;/contact_us&quot;&gt;…&lt;/a&gt;
+-   - attempting click action
+-     2 × waiting for element to be visible, enabled and stable
+-       - element is visible, enabled and stable
+-       - scrolling into view if needed
+-       - done scrolling
+-       - &lt;div class=&quot;fc-dialog-overlay&quot;&gt;&lt;/div&gt; from &lt;div class=&quot;fc-consent-root&quot;&gt;…&lt;/div&gt; subtree intercepts pointer events
+-     - retrying click action
+-     - waiting 20ms
+-     2 × waiting for element to be visible, enabled and stable
+-       - element is visible, enabled and stable
+-       - scrolling into view if needed
+-       - done scrolling
+-       - &lt;div class=&quot;fc-dialog-overlay&quot;&gt;&lt;/div&gt; from &lt;div class=&quot;fc-consent-root&quot;&gt;…&lt;/div&gt; subtree intercepts pointer events
+-     - retrying click action
+-       - waiting 100ms
+-     8 × waiting for element to be visible, enabled and stable
+-       - element is visible, enabled and stable
+-       - scrolling into view if needed
+-       - done scrolling
+-       - &lt;div class=&quot;fc-dialog-overlay&quot;&gt;&lt;/div&gt; from &lt;div class=&quot;fc-consent-root&quot;&gt;…&lt;/div&gt; subtree intercepts pointer events
+-     - retrying click action
+-       - waiting 500ms
+-     - waiting for element to be visible, enabled and stable
+
+	at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:52)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:147)
+	at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:136)
+	at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:133)
+	at com.microsoft.playwright.impl.FrameImpl.clickImpl(FrameImpl.java:244)
+	at com.microsoft.playwright.impl.LocatorImpl.click(LocatorImpl.java:173)
+	at com.microsoft.playwright.Locator.click(Locator.java:2837)
+	at com.qa.framework.pages.HomePage.clickOnContactUsOption(HomePage.java:30)
+	at com.qa.tests.e2e.EndToEndWorkflowTest.contactUs(EndToEndWorkflowTest.java:121)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+Caused by: com.microsoft.playwright.TimeoutError: Error {
+  message=&apos;Timeout 30000ms exceeded.
+  name=&apos;TimeoutError
+  stack=&apos;TimeoutError: Timeout 30000ms exceeded.
+    at _ProgressController.run (C:\Users\deepa\AppData\Local\Temp\playwright-java-11084356679587799792\package\lib\coreBundle.js:12135:32)
+    at DispatcherConnection.dispatch (C:\Users\deepa\AppData\Local\Temp\playwright-java-11084356679587799792\package\lib\coreBundle.js:18775:44)
+}
+Call log:
+-   - waiting for getByRole(AriaRole.LINK, new Page.GetByRoleOptions().setName(&quot; Contact us&quot;))
+-     - locator resolved to &lt;a href=&quot;/contact_us&quot;&gt;…&lt;/a&gt;
+-   - attempting click action
+-     2 × waiting for element to be visible, enabled and stable
+-       - element is visible, enabled and stable
+-       - scrolling into view if needed
+-       - done scrolling
+-       - &lt;div class=&quot;fc-dialog-overlay&quot;&gt;&lt;/div&gt; from &lt;div class=&quot;fc-consent-root&quot;&gt;…&lt;/div&gt; subtree intercepts pointer events
+-     - retrying click action
+-     - waiting 20ms
+-     2 × waiting for element to be visible, enabled and stable
+-       - element is visible, enabled and stable
+-       - scrolling into view if needed
+-       - done scrolling
+-       - &lt;div class=&quot;fc-dialog-overlay&quot;&gt;&lt;/div&gt; from &lt;div class=&quot;fc-consent-root&quot;&gt;…&lt;/div&gt; subtree intercepts pointer events
+-     - retrying click action
+-       - waiting 100ms
+-     8 × waiting for element to be visible, enabled and stable
+-       - element is visible, enabled and stable
+-       - scrolling into view if needed
+-       - done scrolling
+-       - &lt;div class=&quot;fc-dialog-overlay&quot;&gt;&lt;/div&gt; from &lt;div class=&quot;fc-consent-root&quot;&gt;…&lt;/div&gt; subtree intercepts pointer events
+-     - retrying click action
+-       - waiting 500ms
+-     - waiting for element to be visible, enabled and stable
+
+	at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:273)
+	at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:229)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:145)
+	... 27 more
+... Removed 15 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1278472570", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1278472570'><pre>com.microsoft.playwright.TimeoutError: Error {
+  message=&apos;Timeout 30000ms exceeded.
+  name=&apos;TimeoutError
+  stack=&apos;TimeoutError: Timeout 30000ms exceeded.
+    at _ProgressController.run (C:\Users\deepa\AppData\Local\Temp\playwright-java-11084356679587799792\package\lib\coreBundle.js:12135:32)
+    at DispatcherConnection.dispatch (C:\Users\deepa\AppData\Local\Temp\playwright-java-11084356679587799792\package\lib\coreBundle.js:18775:44)
+}
+Call log:
+-   - waiting for getByRole(AriaRole.LINK, new Page.GetByRoleOptions().setName(&quot; Contact us&quot;))
+-     - locator resolved to &lt;a href=&quot;/contact_us&quot;&gt;…&lt;/a&gt;
+-   - attempting click action
+-     2 × waiting for element to be visible, enabled and stable
+-       - element is visible, enabled and stable
+-       - scrolling into view if needed
+-       - done scrolling
+-       - &lt;div class=&quot;fc-dialog-overlay&quot;&gt;&lt;/div&gt; from &lt;div class=&quot;fc-consent-root&quot;&gt;…&lt;/div&gt; subtree intercepts pointer events
+-     - retrying click action
+-     - waiting 20ms
+-     2 × waiting for element to be visible, enabled and stable
+-       - element is visible, enabled and stable
+-       - scrolling into view if needed
+-       - done scrolling
+-       - &lt;div class=&quot;fc-dialog-overlay&quot;&gt;&lt;/div&gt; from &lt;div class=&quot;fc-consent-root&quot;&gt;…&lt;/div&gt; subtree intercepts pointer events
+-     - retrying click action
+-       - waiting 100ms
+-     8 × waiting for element to be visible, enabled and stable
+-       - element is visible, enabled and stable
+-       - scrolling into view if needed
+-       - done scrolling
+-       - &lt;div class=&quot;fc-dialog-overlay&quot;&gt;&lt;/div&gt; from &lt;div class=&quot;fc-consent-root&quot;&gt;…&lt;/div&gt; subtree intercepts pointer events
+-     - retrying click action
+-       - waiting 500ms
+-     - waiting for element to be visible, enabled and stable
+
+	at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:52)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:147)
+	at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:136)
+	at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:133)
+	at com.microsoft.playwright.impl.FrameImpl.clickImpl(FrameImpl.java:244)
+	at com.microsoft.playwright.impl.LocatorImpl.click(LocatorImpl.java:173)
+	at com.microsoft.playwright.Locator.click(Locator.java:2837)
+	at com.qa.framework.pages.HomePage.clickOnContactUsOption(HomePage.java:30)
+	at com.qa.tests.e2e.EndToEndWorkflowTest.contactUs(EndToEndWorkflowTest.java:121)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+Caused by: com.microsoft.playwright.TimeoutError: Error {
+  message=&apos;Timeout 30000ms exceeded.
+  name=&apos;TimeoutError
+  stack=&apos;TimeoutError: Timeout 30000ms exceeded.
+    at _ProgressController.run (C:\Users\deepa\AppData\Local\Temp\playwright-java-11084356679587799792\package\lib\coreBundle.js:12135:32)
+    at DispatcherConnection.dispatch (C:\Users\deepa\AppData\Local\Temp\playwright-java-11084356679587799792\package\lib\coreBundle.js:18775:44)
+}
+Call log:
+-   - waiting for getByRole(AriaRole.LINK, new Page.GetByRoleOptions().setName(&quot; Contact us&quot;))
+-     - locator resolved to &lt;a href=&quot;/contact_us&quot;&gt;…&lt;/a&gt;
+-   - attempting click action
+-     2 × waiting for element to be visible, enabled and stable
+-       - element is visible, enabled and stable
+-       - scrolling into view if needed
+-       - done scrolling
+-       - &lt;div class=&quot;fc-dialog-overlay&quot;&gt;&lt;/div&gt; from &lt;div class=&quot;fc-consent-root&quot;&gt;…&lt;/div&gt; subtree intercepts pointer events
+-     - retrying click action
+-     - waiting 20ms
+-     2 × waiting for element to be visible, enabled and stable
+-       - element is visible, enabled and stable
+-       - scrolling into view if needed
+-       - done scrolling
+-       - &lt;div class=&quot;fc-dialog-overlay&quot;&gt;&lt;/div&gt; from &lt;div class=&quot;fc-consent-root&quot;&gt;…&lt;/div&gt; subtree intercepts pointer events
+-     - retrying click action
+-       - waiting 100ms
+-     8 × waiting for element to be visible, enabled and stable
+-       - element is visible, enabled and stable
+-       - scrolling into view if needed
+-       - done scrolling
+-       - &lt;div class=&quot;fc-dialog-overlay&quot;&gt;&lt;/div&gt; from &lt;div class=&quot;fc-consent-root&quot;&gt;…&lt;/div&gt; subtree intercepts pointer events
+-     - retrying click action
+-       - waiting 500ms
+-     - waiting for element to be visible, enabled and stable
+
+	at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:273)
+	at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:229)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:145)
+	... 27 more
+</pre></div></td>
+<td>30</td>
+<td>com.qa.tests.e2e.EndToEndWorkflowTest@d613308</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.qa.tests.e2e.EndToEndWorkflowTest.loginUser()'><b>loginUser</b><br>Test class: com.qa.tests.e2e.EndToEndWorkflowTest<br>Test method: Verify that existing user is able to login & log out successfully</td>
+<td></td>
+<td>4</td>
+<td>com.qa.tests.e2e.EndToEndWorkflowTest@d613308</td></tr>
+<tr>
+<td title='com.qa.tests.e2e.EndToEndWorkflowTest.loginWithInvalidDetails()'><b>loginWithInvalidDetails</b><br>Test class: com.qa.tests.e2e.EndToEndWorkflowTest<br>Test method: Verify that log in with an incorrect email address or password</td>
+<td></td>
+<td>1</td>
+<td>com.qa.tests.e2e.EndToEndWorkflowTest@d613308</td></tr>
+<tr>
+<td title='com.qa.tests.e2e.EndToEndWorkflowTest.registerUser()'><b>registerUser</b><br>Test class: com.qa.tests.e2e.EndToEndWorkflowTest<br>Test method: Verify that new user is getting create successfully</td>
+<td></td>
+<td>6</td>
+<td>com.qa.tests.e2e.EndToEndWorkflowTest@d613308</td></tr>
+</table><p>
+</body>
+</html>

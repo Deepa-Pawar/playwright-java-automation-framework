@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="Suite" parallel="tests" thread-count="3">
+
+	<test name="Firefox Tests">
+		<parameter name="browserName" value="firefox" />
+		<classes>
+			<class name="com.qa.tests.e2e.EndToEndWorkflowTest" />
+		</classes>
+	</test>
+	<test name="Chrome Tests">
+		<parameter name="browserName" value="chromium" />
+		<classes>
+			<class name="com.qa.tests.e2e.EndToEndWorkflowTest" />
+		</classes>
+	</test>
+	<test name="Webkit Tests">
+		<parameter name="browserName" value="webkit" />
+		<classes>
+			<class name="com.qa.tests.e2e.EndToEndWorkflowTest" />
+		</classes>
+	</test>
+</suite>

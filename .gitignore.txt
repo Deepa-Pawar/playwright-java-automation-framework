@@ -1,0 +1,8 @@
+/target/
+/build/
+/.idea/
+/.settings/
+/.classpath
+/.project
+/test-output/
+/playwright-report/

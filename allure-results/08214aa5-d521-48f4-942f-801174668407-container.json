@@ -1,0 +1,1 @@
+{"uuid":"08214aa5-d521-48f4-942f-801174668407","name":"com.qa.tests.e2e.RegisterUserTest","children":["6341a607-c30d-4973-9181-f86f3da861fb"],"befores":[{"name":"setup","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1789720106185,"stop":1789720106366}],"afters":[],"start":1789720106128,"stop":1789720121632}

@@ -1,0 +1,4 @@
+com\qa\tests\e2e\UserLoginData.class
+com\qa\tests\e2e\RegisterUserTest.class
+com\qa\tests\base\BaseTest.class
+com\qa\tests\e2e\UserData.class

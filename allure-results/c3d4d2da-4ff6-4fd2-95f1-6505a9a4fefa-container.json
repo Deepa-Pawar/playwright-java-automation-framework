@@ -1,0 +1,1 @@
+{"uuid":"c3d4d2da-4ff6-4fd2-95f1-6505a9a4fefa","name":"com.qa.tests.e2e.EndToEndWorkflowTest","children":["a659ec11-7342-4f1e-976f-6401ee49d929"],"befores":[{"name":"setup","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1790165227663,"stop":1790165227843}],"afters":[],"start":1790165227606,"stop":1790165278839}

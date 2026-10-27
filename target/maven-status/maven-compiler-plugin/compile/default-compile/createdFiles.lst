@@ -1,0 +1,10 @@
+com\qa\framework\pages\HomePage.class
+com\qa\framework\pages\ContactUsPage.class
+com\qa\framework\config\ConfigReader.class
+com\qa\framework\factory\Factory.class
+com\qa\framework\pages\EnterAccountInfoPage.class
+com\qa\framework\pages\CheckoutPage.class
+com\qa\framework\pages\DashboardPage.class
+com\qa\framework\pages\ProductPage.class
+com\qa\framework\pages\LoginSignUpPage.class
+com\qa\framework\pages\CartPage.class

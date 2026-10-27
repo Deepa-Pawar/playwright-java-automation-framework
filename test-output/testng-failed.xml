@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="3" parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="3" parallel="tests" name="Firefox Tests(failed)">
+    <parameter name="browserName" value="firefox"/>
+    <classes>
+      <class name="com.qa.tests.e2e.EndToEndWorkflowTest">
+        <methods>
+          <include name="placeNewOrderLoginBeforeCheckout"/>
+          <include name="contactUs"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="loadTestData"/>
+        </methods>
+      </class> <!-- com.qa.tests.e2e.EndToEndWorkflowTest -->
+    </classes>
+  </test> <!-- Firefox Tests(failed) -->
+</suite> <!-- Failed suite [Suite] -->
